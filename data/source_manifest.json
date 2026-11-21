@@ -1,0 +1,52 @@
+{
+  "requested_location": [
+    22.4,
+    114.5
+  ],
+  "returned_location": [
+    22.375,
+    114.45836
+  ],
+  "source": "MeteoFrance MFWAM via Open-Meteo Marine API",
+  "model": "meteofrance_wave",
+  "source_type": "Archived model output, not buoy observations",
+  "timezone": "UTC",
+  "start": "2026-10-22T00:00",
+  "end": "2026-10-28T23:00",
+  "samples": 168,
+  "selection": "Among three October candidates choose middle offshore location; maximize seven-day height range minus half endpoint difference; ties choose earliest.",
+  "candidates": [
+    {
+      "latitude": 22.458336,
+      "longitude": 114.375015,
+      "height_min": 0.08,
+      "height_max": 0.94
+    },
+    {
+      "latitude": 22.375,
+      "longitude": 114.45836,
+      "height_min": 0.18,
+      "height_max": 2.02
+    },
+    {
+      "latitude": 22.375,
+      "longitude": 114.625015,
+      "height_min": 0.2,
+      "height_max": 2.28
+    }
+  ],
+  "height_range_m": [
+    0.4,
+    2.02
+  ],
+  "mean_period_range_s": [
+    4.75,
+    15.1
+  ],
+  "direction_range_deg": [
+    42,
+    102
+  ],
+  "raw_sha256": "667198d83930580c7b6f5d671d6baade4695e3f3fce494bc55bad9010725a6d7",
+  "source_url": "https://marine-api.open-meteo.com/v1/marine?latitude=22.50,22.40,22.35&longitude=114.40,114.50,114.60&hourly=wave_height,wave_period,wave_direction&models=meteofrance_wave&start_date=2026-10-01&end_date=2026-10-31&timezone=GMT"
+}
